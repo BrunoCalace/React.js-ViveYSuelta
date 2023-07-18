@@ -1,0 +1,41 @@
+.navbar {
+    width: 100vw;
+    background-color: rgb(248,129,129);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.iconNav {
+    width: 40px;
+    height: auto;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.btnNav {
+    background-color: rgb(248,129,129);
+    border-left: 0.5px solid rgb(243,238,195);
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 0 10px;
+}
+
+.btnNav:hover {
+    color: rgb(243,238,195);
+    cursor: pointer;
+}
+
+.iconNav:hover {
+    cursor: pointer;
+}

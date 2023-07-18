@@ -1,0 +1,24 @@
+.btnCarritoNav {
+    padding: 0 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCarritoNav:hover {
+    cursor: pointer;
+}
+
+.carrito {
+    width: 30px;
+    height: auto;
+}
+
+.carritoNum {
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 5px;
+}
