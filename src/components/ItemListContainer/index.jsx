@@ -1,18 +1,23 @@
 import "./styles.css";
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
+import Items from "./Items"
+import Item from "./Item"
 
-function ItemListContainer({Greeting}) {
-    const [saludo, setSaludo] = useState(Greeting);
+function ItemListContainer() {
+    const [products, setProducts] = useState([]);
+    
+    useEffect(() => {
+        fetch('/src/mocks/data.json')
+          .then((response) => response.json())
+          .then((data) => setProducts(data))
+          .catch((error) => console.error('Error fetching data:', error));
+      }, []);
 
-    function camGreet() {
-        setSaludo("Apruebeme la pre-entegra 😁");
-        //saludo = "Apruebeme la pre-entegra 😁";
-    }
+    console.log(products);
 
     return (
-        <div className="itemListContainer">
-            <p>{saludo}</p>
-            <button onClick={camGreet}>Cambiar Mensaje</button>
+        <div className="item-list-container">
+            <Items products={products} />
         </div>
     );
 }

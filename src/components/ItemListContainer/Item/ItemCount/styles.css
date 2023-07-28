@@ -1,0 +1,21 @@
+.item-count-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto
+}
+
+.item-count-container .res-btn {
+    background-color: rgb(248,129,129);
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.item-count-container .sum-btn {
+    background-color: rgb(248,129,129);
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+}

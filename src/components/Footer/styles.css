@@ -1,0 +1,58 @@
+.siteFooter {
+    width: 100%;
+    background-color: rgb(248,129,129);
+}
+
+.siteFooter .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 150px;
+    padding: 45px 0px;
+}
+
+.siteFooter .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteFooter .grupo1 .box figure img {
+    width: 200px;
+}
+
+.siteFooter .grupo1 .box figure h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.siteFooter .grupo1 .box figure p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.siteFooter .grupo1 .redes a  svg {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.siteFooter .grupo2 {
+    background-color: rgb(248,129,129);
+    border-top: 2px solid white;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+.siteFooter .grupo2 small{
+    font-size: 15px;
+}

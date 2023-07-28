@@ -1,12 +1,14 @@
 import "./App.css";
 import  Navbar  from "./components/Navbar"
 import ItemListContainer from "./components/ItemListContainer"
+import Footer from "./components/Footer"
 
 function App() {
   return (
-    <main className="main">
-      <Navbar />
-      <ItemListContainer Greeting="Hola Profe" />
+    <main>
+        <Navbar />
+        <ItemListContainer />
+        <Footer/>
     </main>
   );
 }
