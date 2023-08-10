@@ -6,3 +6,10 @@
     row-gap: 50px;
     margin: 30px 80px;
 }
+
+.item-list-container h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:auto
+}
