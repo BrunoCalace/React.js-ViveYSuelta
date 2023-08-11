@@ -1,5 +1,6 @@
 import "./styles.css";
 import icon from "../../assets/icons/icon.png";
+import { Link } from "react-router-dom";
 
 function Footer () {
     return (
@@ -7,9 +8,9 @@ function Footer () {
         <div className="grupo1">
           <div className="box">
             <figure>
-              <a href="#">
+              <Link to="/">
                 <img src={icon} alt="Logo"/>
-              </a>
+              </Link>
             </figure>
           </div>
           <div className="box">

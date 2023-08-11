@@ -5,7 +5,7 @@ function CartWidget () {
     return (
         <div className="btnCarritoNav">
             <img className="carrito"  src={cart} alt="carrito" />
-            <p className="carritoNum">5</p>
+            <p className="carritoNum">0</p>
         </div>
         
     );

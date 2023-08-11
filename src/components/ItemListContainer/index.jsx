@@ -1,22 +1,14 @@
 import "./styles.css";
-import {useEffect, useState} from 'react'
-import Items from "./Items"
-import Item from "./Item"
+import {useEffect, useState} from 'react';
+import { Link } from "react-router-dom";
+import Items from "./Items";
+
 
 function ItemListContainer() {
     const [products, setProducts] = useState([]);
     const [showLoading, setShowLoading] = useState(true);
     
     useEffect(() => {
-        /*fetch('/src/mocks/data.json')
-          .then((response) => response.json())
-          .then((data) => {
-            setTimeout(() => {
-                setProducts(data)
-                }, 2000)
-            })
-
-          .catch((error) => console.error('Error fetching data:', error));*/
         getProducts(); 
       }, []);
 

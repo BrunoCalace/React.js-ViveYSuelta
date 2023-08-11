@@ -1,18 +1,21 @@
 import "./styles.css";
 import icon from "../../assets/icons/icon.png";
 import CartWidget from "./CartWidget";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return(
         <nav className="navbar">
             <div className="nav">
-                <img className="iconNav" src={icon} alt="icon"/>
-                <button className="btnNav">Home</button>
-                <button className="btnNav">Bolsos</button>
-                <button className="btnNav">Carteras</button>
-                <button className="btnNav">Cintos</button>
-                <button className="btnNav">Mochilas</button>
-                <button className="btnNav">Calzado</button>
+                <ul className="nav-ul">
+                    <Link className="li-icon" to="/"><img className="iconNav" src={icon} alt="icon"/></Link>
+                    <Link className="li" to="/">Home</Link>
+                    <Link className="li" to="/Category/Bolsos">Bolsos</Link>
+                    <Link className="li" to="/Category/Carteras">Carteras</Link>
+                    <Link className="li"to="/Category/Cintos">Cintos</Link>
+                    <Link className="li" to="/Category/Mochilas">Mochilas</Link>
+                    <Link className="li" to="/Category/Calzado">Calzado</Link>
+                </ul>
             </div>
             <div className="btnCarrito">
                 <CartWidget />

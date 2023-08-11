@@ -21,6 +21,7 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    color: black;
 }
 
 .item-price {
@@ -28,6 +29,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 22px;
+    color: black;
 }
 
 .item .item-btn {

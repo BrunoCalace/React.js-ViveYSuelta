@@ -7,7 +7,6 @@ function Item({data}) {
             <img className="item-img" src={data.img}/>
             <h3 className="item-nom">{data.nom}</h3>
             <p className="item-price">$ {data.precio}</p>
-            <ItemCount prods={data} />
             <button className="item-btn">Agregar al carrito</button>
             <div className="item-stock">
                 <span>Stock: {data.stock}</span>

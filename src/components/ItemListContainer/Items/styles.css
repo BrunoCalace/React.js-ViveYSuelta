@@ -1,0 +1,11 @@
+.items-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.items-container .card {
+    text-decoration: none;
+    margin: 30px 40px;
+}

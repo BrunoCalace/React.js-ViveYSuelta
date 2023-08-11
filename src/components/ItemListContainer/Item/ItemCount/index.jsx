@@ -19,9 +19,9 @@ function ItemCount ({prods}) {
 
     return (
         <div className="item-count-container">
-            <button className="res-btn" onClick={handleRestar}>➖</button>
+            <button className="res-btn" onClick={handleRestar}>-</button>
             <span>{cant}</span>
-            <button className="sum-btn" onClick={handleSumar}>➕</button>
+            <button className="sum-btn" onClick={handleSumar}>+</button>
 
         </div>
     );
