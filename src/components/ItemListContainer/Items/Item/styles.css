@@ -1,0 +1,29 @@
+.item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item-img {
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.item-nom{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 0;
+}
+
+.item-price {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    color: black;
+    padding: 10px 0;
+}

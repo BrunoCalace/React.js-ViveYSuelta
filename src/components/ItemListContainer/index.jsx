@@ -1,7 +1,6 @@
 import "./styles.css";
 import {useEffect, useState} from 'react';
-import { Link } from "react-router-dom";
-import Items from "./Items";
+import Items from "./Items/index";
 
 
 function ItemListContainer() {

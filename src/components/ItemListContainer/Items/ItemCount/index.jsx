@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./styles.css"
 
-function ItemCount ({prods}) {
+function ItemCount ({ stock }) {
     const [cant, setCant] = useState(1);
 
     const handleRestar = () => {
@@ -12,7 +12,7 @@ function ItemCount ({prods}) {
     };
 
     const handleSumar = () => {
-        if (cant < prods.stock) {
+        if (cant < stock) {
           setCant((prevCant) => prevCant + 1);
         }
     };

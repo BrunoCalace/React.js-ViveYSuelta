@@ -3,8 +3,7 @@ import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Items from '../../components/ItemListContainer/Items';
-import ItemCount from '../../components/ItemListContainer/Item/ItemCount';
+import ItemCount from "../../components/ItemListContainer/Items/ItemCount";
 
 const DetailPage = () => {
     const [prods, setProducts] = useState([]);
@@ -16,8 +15,6 @@ const DetailPage = () => {
     let fProd = prods.filter((prod) => {
         return prod.id === productId; 
     });
-
-    console.log(fProd);
 
     useEffect(() => {
         getProducts(); 
@@ -49,8 +46,8 @@ const DetailPage = () => {
                         </div>
                         <div className="details2">
                             <h1 className="details-nom">{fProd[0].nom}</h1>
-                            <p className="details-price">{fProd[0].precio}</p>
-                            <ItemCount prods={fProd[0]} />
+                            <p className="details-price">$ {fProd[0].precio}</p>
+                            <ItemCount stock={fProd[0].stock} />
                             <button className="details-btn">Agregar al carrito</button>
                             <div className="details-stock">
                                 <span>Stock: {fProd[0].stock}</span>

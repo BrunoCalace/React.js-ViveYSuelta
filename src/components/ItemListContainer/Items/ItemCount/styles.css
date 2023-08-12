@@ -2,9 +2,10 @@
     width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:auto;
     color: black;
+    gap: 20px;
 }
 
 .item-count-container .res-btn {
@@ -23,4 +24,8 @@
     font-size: 20px;
     cursor: pointer;
     justify-content: center;
+}
+
+.item-count-container span {
+    font-size: 100%;
 }
