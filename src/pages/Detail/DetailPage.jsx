@@ -39,23 +39,25 @@ const DetailPage = () => {
         <>
             <Navbar />
             {fProd.length > 0 && (
-                <div className="details-container">
-                    <div className="details-top">
-                        <div className="details1">
-                            <img className="img-details" src={fProd[0].img} alt="Foto producto" />
-                        </div>
-                        <div className="details2">
-                            <h1 className="details-nom">{fProd[0].nom}</h1>
-                            <p className="details-price">$ {fProd[0].precio}</p>
-                            <ItemCount stock={fProd[0].stock} />
-                            <button className="details-btn">Agregar al carrito</button>
-                            <div className="details-stock">
-                                <span>Stock: {fProd[0].stock}</span>
+                <div className="container-det">
+                    <div className="details-container">
+                        <div className="details-top">
+                            <div className="details1">
+                                <img className="img-details" src={fProd[0].img} alt="Foto producto" />
+                            </div>
+                            <div className="details2">
+                                <h1 className="details-nom">{fProd[0].nom}</h1>
+                                <p className="details-price">$ {fProd[0].precio}</p>
+                                <ItemCount stock={fProd[0].stock} />
+                                <button className="details-btn">Agregar al carrito</button>
+                                <div className="details-stock">
+                                    <span>Stock: {fProd[0].stock}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="details-bottom">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptas cumque obcaecati corrupti delectus nemo sequi! At hic quod totam corporis itaque! Illo eveniet, soluta odit magni blanditiis recusandae? Blanditiis!</p>
+                        <div className="details-bottom">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptas cumque obcaecati corrupti delectus nemo sequi! At hic quod totam corporis itaque! Illo eveniet, soluta odit magni blanditiis recusandae? Blanditiis!</p>
+                        </div>
                     </div>
                 </div>
             )}

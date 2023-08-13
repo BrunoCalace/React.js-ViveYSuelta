@@ -1,3 +1,10 @@
+.container-det {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .details-container {
     display: block;
     padding: 40px;
@@ -68,4 +75,41 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 758px){
+    .details-container {
+        display: block;
+        padding: 40px;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        max-width: 60%;
+        margin: 20px auto;
+    }
+
+    .details-top {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .img-details {
+        max-width: 60%;
+        height: auto;
+        border-radius: 20px;
+        padding-bottom: 15px;
+    }
+
+    .details-btn {
+        max-width: 80%;
+        background-color: rgb(248,129,129);
+        color: #fff;
+        margin: 10px auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
