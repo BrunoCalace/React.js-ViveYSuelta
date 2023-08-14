@@ -1,6 +1,6 @@
 import "./styles.css";
 import Item from "./Item";
-import ItemCount from "./ItemCount";
+import ItemCount from "../ItemCount";
 import { Link } from "react-router-dom";
 
 function Items({products}){

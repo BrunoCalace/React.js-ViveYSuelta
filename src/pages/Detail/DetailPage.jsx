@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import ItemCount from "../../components/ItemListContainer/Items/ItemCount";
+import ItemCount from "../../components/ItemListContainer/ItemCount";
 
 const DetailPage = () => {
     const [prods, setProducts] = useState([]);

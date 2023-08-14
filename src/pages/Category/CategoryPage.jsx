@@ -1,6 +1,6 @@
 import "./styles.css"
 import Navbar from "../../components/Navbar";
-import Items from "../../components/ItemListContainer/Items";
+import ItemList from "../../components/ItemListContainer/ItemList";
 import Footer from "../../components/Footer";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -41,7 +41,7 @@ const CategoryPage = () => {
                 {showLoading ? (
                     <h1>Loading...</h1>
                 ) : (
-                    <Items products={filteredProds} />
+                    <ItemList products={filteredProds} />
                 )
                 }
             </div>

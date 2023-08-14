@@ -1,6 +1,6 @@
 import "./styles.css";
 import {useEffect, useState} from 'react';
-import Items from "./Items/index";
+import ItemList from "./ItemList/index";
 
 
 function ItemListContainer() {
@@ -31,7 +31,7 @@ function ItemListContainer() {
             {showLoading ? (
                 <h1>Loading...</h1>
             ) : (
-                <Items products={products} />
+                <ItemList products={products} />
             )
             }
         </div>
