@@ -1,7 +1,21 @@
 import "./styles.css"
-import ItemCount from "../ItemListContainer/ItemCount"
+import { useState, useContext } from "react";
+import { CartContext } from "../../context/CartContext"
+import ItemCount from "../ItemCount"
+
 
 const ItemDetail = ({ product }) => {
+    const { addToCart } = useContext(CartContext);
+    const [selectedCant, setSelectedCant] = useState(1);
+
+    const handleAddToCart = () => {
+        addToCart(product, selectedCant);
+    };
+
+    const handleItemCountChange = (newCant) => {
+        setSelectedCant(newCant);
+    };
+
     return (
         <>
             {product && (
@@ -14,8 +28,14 @@ const ItemDetail = ({ product }) => {
                             <div className="details2">
                                 <h1 className="details-nom">{product.nom}</h1>
                                 <p className="details-price">$ {product.precio}</p>
-                                <ItemCount stock={product.stock} />
-                                <button className="details-btn">Agregar al carrito</button>
+                                <ItemCount
+                                    product={product}
+                                    initialCant={selectedCant}
+                                    onCantChange={handleItemCountChange}
+                                />
+                                <button className="details-btn" onClick={() => handleAddToCart(selectedCant)}>
+                                    Agregar al carrito
+                                </button>
                                 <div className="details-stock">
                                     <span>Stock: {product.stock}</span>
                                 </div>

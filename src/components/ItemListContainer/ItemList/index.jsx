@@ -1,6 +1,6 @@
 import "./styles.css";
 import Item from "./Item";
-import ItemCount from "../ItemCount";
+import ItemCount from "../../ItemCount";
 import { Link } from "react-router-dom";
 
 function Items({products}){
@@ -11,8 +11,6 @@ function Items({products}){
                     <Link to={`/Detail/${data.id}`}>
                         <Item data={data} />
                     </Link>
-                    <ItemCount stock={data.stock}/>
-                    <button className="item-btn">Agregar al carrito</button>
                     <div className="item-stock">
                         <span>Stock: {data.stock}</span>
                     </div>
@@ -21,5 +19,7 @@ function Items({products}){
         </div>
     );
 }
+
+
 
 export default Items;

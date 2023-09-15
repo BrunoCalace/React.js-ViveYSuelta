@@ -1,6 +1,6 @@
 import "./styles.css";
 import icon from "../../assets/icons/icon.png";
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget";
 import { Link } from 'react-router-dom';
 import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -34,9 +34,9 @@ function Navbar() {
             <button className="nav-btn" onClick={showNavbar}>
                     <FaBars />
                 </button>
-            <div className="btnCarrito">
+            <Link className="btnCarrito" to="/Cart">
                 <CartWidget />
-            </div>
+            </Link>
         </nav>
     ); 
 }

@@ -1,0 +1,46 @@
+.modal-content {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.modal-content {
+    padding: 20px 0;
+}
+
+.modal-content .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: solid black;
+}
+
+.modal-content .item img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    padding: 20px;
+}
+
+.modal-content .item .delete-product {
+    cursor: pointer;
+    margin: auto;
+}
+
+.modal-content .item .delete-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.modal-content .item .delete-product img {
+    width: 20px; 
+    height: auto;
+    padding: 0;
+ }

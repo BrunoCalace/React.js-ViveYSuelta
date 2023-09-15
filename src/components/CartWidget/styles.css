@@ -22,3 +22,11 @@
     font-size: 12px;
     padding: 2px 5px;
 }
+
+.visible {
+    display: inline-block;
+}
+  
+.hidden {
+    display: none;
+}
