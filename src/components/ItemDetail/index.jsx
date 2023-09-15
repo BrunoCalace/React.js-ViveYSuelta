@@ -42,7 +42,7 @@ const ItemDetail = ({ product }) => {
                             </div>
                         </div>
                         <div className="details-bottom">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptas cumque obcaecati corrupti delectus nemo sequi! At hic quod totam corporis itaque! Illo eveniet, soluta odit magni blanditiis recusandae? Blanditiis!</p>
+                            <p>{product.description}</p>
                         </div>
                     </div>
                 </div>

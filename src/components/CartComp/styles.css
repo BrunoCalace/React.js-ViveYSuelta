@@ -82,13 +82,66 @@
     align-items: center;
     cursor: pointer;
     margin: auto;
- }
+}
 
 .modal-content .item .delete-product img {
     width: 20px; 
     height: auto;
     padding: 0;
- }
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(248,129,129);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+  
+.checkout-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+  
+.checkout-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+  
+.checkout-form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+  
+.checkout-form button {
+    background-color: rgb(248, 129, 129);
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+.checkout-form button:hover {
+    background-color: #ff6b6b;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
 
  @media only screen and (max-width: 758px){
     .modal-content h1 {

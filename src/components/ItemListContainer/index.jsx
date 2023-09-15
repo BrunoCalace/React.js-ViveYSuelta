@@ -1,5 +1,7 @@
 import "./styles.css";
 import {useEffect, useState} from 'react';
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/firebaseConfig";
 import ItemList from "./ItemList/index";
 import { RiseLoader } from "react-spinners";
 
@@ -9,23 +11,25 @@ function ItemListContainer() {
     const [showLoading, setShowLoading] = useState(true);
 
     useEffect(() => {
-        getProducts(); 
-      }, []);
+        const getItems = async () => {
+            try {
+                const q = query(collection(db, "items"));
+                const querySnapshot = await getDocs(q);
+                const docs = [];
 
-    const getProducts = async () => {
-        try{
-            const response = await fetch('/src/mocks/data.json');
-            if(!response.ok) {
-                throw new Error("Algo anduvo mal...");
+                querySnapshot.forEach((doc) => {
+                    docs.push({ ...doc.data(), id: doc.id });
+                });
+
+                setProducts(docs);
+                setShowLoading(false);
+            } catch (error) {
+                console.error("Error fetching data", error);
+                setShowLoading(false);
             }
-            const data = await response.json();
-            setProducts(data);
-            setTimeout(() => setShowLoading(false), 2000);
-        } catch (error) {
-            console.error("Error fetching data", error);
-            setShowLoading(false);
-        }
-    };
+        };
+        getItems();
+    }, []);
 
     return (
         <div className="item-list-container">
