@@ -3,7 +3,6 @@ import "./styles.css"
 
 function ItemCount ({ product, initialCant, onCantChange }) {
     const [selectedCant, setSelectedCant] = useState(initialCant);
-    console.log(initialCant);
     
     const handleRestar = () => {
         if(selectedCant > 1)

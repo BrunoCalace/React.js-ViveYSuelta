@@ -1,12 +1,13 @@
 import "./styles.css";
 import {useEffect, useState} from 'react';
 import ItemList from "./ItemList/index";
+import { RiseLoader } from "react-spinners";
 
 
 function ItemListContainer() {
     const [products, setProducts] = useState([]);
     const [showLoading, setShowLoading] = useState(true);
-    
+
     useEffect(() => {
         getProducts(); 
       }, []);
@@ -29,7 +30,11 @@ function ItemListContainer() {
     return (
         <div className="item-list-container">
             {showLoading ? (
-                <h1>Loading...</h1>
+                <div className="spinner-container">
+                    <div>
+                        <RiseLoader loading={showLoading} color="rgb(248,129,129)" size={45}  /> 
+                    </div>
+                </div>
             ) : (
                 <ItemList products={products} />
             )

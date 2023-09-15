@@ -6,6 +6,7 @@ const CartContextProvider = ({children}) => {
         const localCartData = JSON.parse(localStorage.getItem("carrito")) || [];
         return localCartData;
     });
+    const [totalUnitsInCart, setTotalUnitsInCart] = useState(0);
 
     useEffect(() => {
         localStorage.setItem("carrito", JSON.stringify(cartList));
@@ -42,8 +43,6 @@ const CartContextProvider = ({children}) => {
         saveLocal();
     }
 
-    const carritoCounter = () => carrito.length;
-
     const removeList = () => {
         setCartList([]);
         saveLocal();
@@ -60,7 +59,7 @@ const CartContextProvider = ({children}) => {
     }
 
     return(
-        <CartContext.Provider value={{cartList, updateCartItem, addToCart, removeList, deleteItem, carritoCounter}}>
+        <CartContext.Provider value={{cartList, totalUnitsInCart, updateCartItem, addToCart, removeList, deleteItem}}>
             {children}
         </CartContext.Provider> 
         

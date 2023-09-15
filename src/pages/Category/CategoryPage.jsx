@@ -4,6 +4,7 @@ import ItemList from "../../components/ItemListContainer/ItemList";
 import Footer from "../../components/Footer";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { RiseLoader } from "react-spinners";
 
 const CategoryPage = () => {
     const [prods, setProducts] = useState([]);
@@ -39,7 +40,11 @@ const CategoryPage = () => {
             <Navbar />
             <div className="item-list-container">
                 {showLoading ? (
-                    <h1>Loading...</h1>
+                    <div className="spinner-container">
+                        <div>
+                            <RiseLoader loading={showLoading} color="rgb(248,129,129)" size={45}  /> 
+                        </div>
+                    </div>
                 ) : (
                     <ItemList products={filteredProds} />
                 )
