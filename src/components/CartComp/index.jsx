@@ -106,7 +106,7 @@ const CartComp = ({ cartList }) => {
                         <p>{product.cant}</p>
                         <p>$ {product.precio}</p>
                         <span className="delete-product" onClick={() => deleteItem(product.id)}>
-                            <img src="/src/assets/icons/basura.png" alt="Eliminar" />
+                            X
                         </span>
                     </div>
                 ))}

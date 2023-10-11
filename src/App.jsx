@@ -14,9 +14,9 @@ function App() {
         <Router>
           <Routes>
             <Route path="/React.js-ViveYSuelta" element={<Home />} />
-            <Route path="/Cart" element={<Cart />} />
-            <Route path="/Detail/:prodId" element={<DetailPage />} />
-            <Route path="/Category/:catId" element={<CategoryPage />}/>
+            <Route path="/React.js-ViveYSuelta/Cart" element={<Cart />} />
+            <Route path="/React.js-ViveYSuelta/Detail/:prodId" element={<DetailPage />} />
+            <Route path="/React.js-ViveYSuelta/Category/:catId" element={<CategoryPage />}/>
             <Route path="*" element={<Error />} />
           </Routes>
         </Router>

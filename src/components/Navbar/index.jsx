@@ -20,12 +20,12 @@ function Navbar() {
             <div className={navClassName} ref={navRef}>
                 <ul className="nav-ul">
                     <Link className="li-icon" to="/"><img className="iconNav" src={icon} alt="icon"/></Link>
-                    <Link className="li" to="/">Home</Link>
-                    <Link className="li" to="/Category/Bolsos">Bolsos</Link>
-                    <Link className="li" to="/Category/Carteras">Carteras</Link>
-                    <Link className="li"to="/Category/Cintos">Cintos</Link>
-                    <Link className="li" to="/Category/Mochilas">Mochilas</Link>
-                    <Link className="li" to="/Category/Calzado">Calzado</Link>
+                    <Link className="li" to="/React.js-ViveYSuelta">Home</Link>
+                    <Link className="li" to="/React.js-ViveYSuelta/Category/Bolsos">Bolsos</Link>
+                    <Link className="li" to="/React.js-ViveYSuelta/Category/Carteras">Carteras</Link>
+                    <Link className="li"to="/React.js-ViveYSuelta/Category/Cintos">Cintos</Link>
+                    <Link className="li" to="/React.js-ViveYSuelta/Category/Mochilas">Mochilas</Link>
+                    <Link className="li" to="/React.js-ViveYSuelta/Category/Calzado">Calzado</Link>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes />
                     </button>
