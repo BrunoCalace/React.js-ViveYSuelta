@@ -21,7 +21,7 @@ function Items({products}){
         <div className="items-container">
             {products.map((data) => (
                 <div className="card" key={data.id}>
-                    <Link to={`/Detail/${data.id}`}>
+                    <Link to={`/React.js-ViveYSuelta/Detail/${data.id}`}>
                         <Item data={data} />
                     </Link>
                     <ItemCount

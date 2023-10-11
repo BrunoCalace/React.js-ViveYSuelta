@@ -7,7 +7,7 @@ const Error = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            navigate("/");
+            navigate("/React.js-ViveYSuelta");
         }, 2000); 
     }, [navigate]);
 

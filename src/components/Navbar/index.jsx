@@ -34,7 +34,7 @@ function Navbar() {
             <button className="nav-btn" onClick={showNavbar}>
                     <FaBars />
                 </button>
-            <Link className="btnCarrito" to="/Cart">
+            <Link className="btnCarrito" to="/React.js-ViveYSuelta/Cart">
                 <CartWidget />
             </Link>
         </nav>
