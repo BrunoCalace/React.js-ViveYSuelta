@@ -19,7 +19,7 @@ function Navbar() {
         <nav className="navbar">
             <div className={navClassName} ref={navRef}>
                 <ul className="nav-ul">
-                    <Link className="li-icon" to="/"><img className="iconNav" src={icon} alt="icon"/></Link>
+                    <Link className="li-icon" to="/React.js-ViveYSuelta"><img className="iconNav" src={icon} alt="icon"/></Link>
                     <Link className="li" to="/React.js-ViveYSuelta">Home</Link>
                     <Link className="li" to="/React.js-ViveYSuelta/Category/Bolsos">Bolsos</Link>
                     <Link className="li" to="/React.js-ViveYSuelta/Category/Carteras">Carteras</Link>

@@ -91,7 +91,7 @@ const CartComp = ({ cartList }) => {
         return (
             <div className="modal-content">
                 <h1>No hay productos en el carrito.</h1>
-                <Link className="li" to="/">Volver a la página de inicio</Link>
+                <Link className="li" to="/React.js-ViveYSuelta">Volver a la página de inicio</Link>
             </div>
         );
     }

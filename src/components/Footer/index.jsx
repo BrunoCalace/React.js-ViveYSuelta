@@ -8,7 +8,7 @@ function Footer () {
         <div className="grupo1">
           <div className="box">
             <figure>
-              <Link to="/">
+              <Link to="/React.js-ViveYSuelta">
                 <img src={icon} alt="Logo"/>
               </Link>
             </figure>
