@@ -13,7 +13,7 @@ function App() {
       <CartContextProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/React.js-ViveYSuelta" element={<Home />} />
             <Route path="/Cart" element={<Cart />} />
             <Route path="/Detail/:prodId" element={<DetailPage />} />
             <Route path="/Category/:catId" element={<CategoryPage />}/>
